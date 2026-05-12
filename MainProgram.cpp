@@ -188,7 +188,7 @@ std::string Car::describe() const {
 // ----------------------------------------------------------------
 
 // TODO: Implement Truck constructor (chain to Vehicle)
-Truck::Truck(std::string make,int year,double fuelLevel,double payloadTons):Vehicle(make,year,payloadTons), payloadTons(payloadTons){}
+Truck::Truck(std::string make,int year,double fuelLevel,double payloadTons):Vehicle(make,year,fuelLevel), payloadTons(payloadTons){}
 // TODO: Implement getPayloadTons()
 double Truck::getPayloadTons() const{return payloadTons;}
 
